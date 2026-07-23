@@ -190,3 +190,18 @@ Scikit-learn
 
 Jupyter Notebook
 
+✅ Result
+
+The project successfully combined customer behavior analytics, RFM segmentation, and machine learning to predict customer churn and generate actionable business insights.
+
+Business Impact
+
+Improved customer retention strategy
+
+Identified high-value customer segments
+
+Enabled personalized marketing
+
+Supported data-driven decision making
+
+Increased opportunities for revenue growth through proactive customer engagement
