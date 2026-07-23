@@ -1,207 +1,379 @@
-📌 Project Overview
+# 📊 Customer Churn Prediction using RFM Analysis & Machine Learning
 
-⭐ Situation
 
-Customer retention is a major challenge for online retail businesses. Although companies collect large volumes of transaction data, they often struggle to identify customers who are likely to stop purchasing.
 
-This project analyzes the Online Retail Transaction Dataset to understand purchasing behavior, discover customer segments, and build a predictive machine learning model that identifies customers at risk of churn.
+## 📌 Project Overview
 
-🎯 Task
+This project analyzes customer transaction data from an online retail company to understand purchasing behavior, identify valuable customer segments, and predict customers who are likely to stop buying from the business.
 
-The primary objectives were to:
+Using **Exploratory Data Analysis (EDA)**, **RFM Segmentation**, and **Machine Learning**, the project provides actionable business insights that help improve customer retention, increase revenue, and strengthen long-term customer relationships.
 
-Analyze customer purchasing patterns using Exploratory Data Analysis (EDA)
+---
 
-Identify high-value customer segments using RFM Analysis
+# ⭐ STAR Methodology
 
-Engineer behavioral features for churn prediction
+## 🟢 Situation
 
-Build and evaluate Machine Learning models
+Customer retention is one of the biggest challenges in the retail industry. Although businesses collect large volumes of customer transaction data, they often struggle to identify customers who are likely to churn before they stop purchasing.
 
-Generate actionable business recommendations for improving customer retention and revenue
+Without early identification, businesses lose valuable customers, resulting in reduced revenue and increased customer acquisition costs.
 
-⚙️ Action
+The project uses the **Online Retail Transaction Dataset**, which contains:
 
-📊 Data Preparation
+- Invoice Number
+- Product Description
+- Quantity Purchased
+- Unit Price
+- Purchase Date
+- Customer ID
+- Customer Country
 
-Cleaned missing and duplicate records
+The goal was to analyze customer purchasing behavior and develop a predictive model that identifies customers at risk of churn.
 
-Removed cancelled transactions and invalid values
+---
 
-Created new business metrics including:
+## 🎯 Task
 
-Revenue
+The objectives of this project were to:
 
-Recency
+- Perform Exploratory Data Analysis (EDA) to understand customer purchasing behavior.
+- Identify revenue patterns and seasonal sales trends.
+- Segment customers using RFM Analysis.
+- Build predictive machine learning models for customer churn prediction.
+- Evaluate model performance using classification metrics.
+- Generate business recommendations to improve customer retention.
 
-Frequency
+---
 
-Monetary Value (RFM)
+## ⚙️ Action
 
-Engineered customer-level features for modeling
+### Data Preparation
 
-📈 Exploratory Data Analysis (EDA)
+- Cleaned missing and invalid transaction records.
+- Converted transaction dates into datetime format.
+- Calculated Total Revenue.
+- Engineered customer-level features.
+- Prepared RFM metrics.
 
-Performed detailed analysis to understand customer behavior and revenue trends.
+---
 
-Key Insights
+### Exploratory Data Analysis (EDA)
 
-1️⃣ Revenue Concentration
+Performed detailed analysis on:
 
-A small percentage of customers generated the majority of total revenue.
+- Revenue Distribution
+- Monthly Revenue Trends
+- Geographic Sales Distribution
+- Customer Purchase Frequency
+- Customer Revenue Contribution
+- Customer Segmentation
 
-Business Insight
+---
 
-Focus retention efforts on high-value customers through loyalty rewards and personalized offers.
+## 🔍 Top 5 EDA Findings
 
-2️⃣ Seasonal Revenue Trends
+### 1️⃣ Revenue Concentration Among a Small Group of Customers
 
-Monthly sales fluctuated significantly with clear peak purchasing periods.
+### Observation
 
-Business Insight
+A relatively small percentage of customers generated the majority of total revenue.
 
-Schedule promotional campaigns during low-performing months to stabilize revenue.
+### Business Takeaway
 
-3️⃣ Geographic Revenue Distribution
+- Prioritize high-value customer retention.
+- Introduce loyalty rewards.
+- Offer exclusive promotions.
+- Personalize customer experiences.
 
-Most revenue originated from a limited number of countries.
+---
 
-Business Insight
+### 2️⃣ Seasonal Revenue Trends
 
-Increase investment in high-performing markets while exploring growth opportunities in emerging regions.
+### Observation
 
-4️⃣ Customer Purchase Frequency
+Monthly revenue fluctuated significantly, with certain months generating considerably higher sales.
 
-Most customers purchased only a few times.
+### Business Takeaway
 
-A smaller segment demonstrated strong repeat purchasing behavior.
+- Schedule marketing campaigns during low-performing months.
+- Optimize inventory planning.
+- Improve promotional timing.
 
-Business Insight
+---
 
-Encourage repeat purchases using recommendation systems and loyalty programs.
+### 3️⃣ Geographic Revenue Concentration
 
-5️⃣ Customer Segmentation (RFM Analysis)
+### Observation
+
+Only a few countries contributed the majority of total revenue.
+
+### Business Takeaway
+
+- Increase investment in top-performing regions.
+- Explore growth opportunities in underperforming markets.
+
+---
+
+### 4️⃣ Customer Purchase Frequency
+
+### Observation
+
+Most customers made only a few purchases, while a smaller group purchased frequently.
+
+### Business Takeaway
+
+- Encourage repeat purchases.
+- Implement customer loyalty programs.
+- Recommend personalized products.
+
+---
+
+### 5️⃣ RFM Customer Segmentation
+
+### Observation
 
 Customers were segmented into:
 
-🏆 Champions
+- 🏆 Champions
+- ❤️ Loyal Customers
+- ⚠️ At Risk Customers
+- ❌ Lost Customers
 
-❤️ Loyal Customers
+### Business Takeaway
 
-⚠️ At Risk
+Each customer segment requires different marketing strategies.
 
-❌ Lost Customers
+Examples include:
 
-Business Insight
+- Rewards for Champions
+- Loyalty benefits for Loyal Customers
+- Re-engagement campaigns for At Risk Customers
+- Win-back offers for Lost Customers
 
-Design targeted marketing campaigns for each customer segment instead of applying one generic strategy.
+---
 
-🤖 Machine Learning
+## 🤖 Machine Learning Models
 
-Two classification models were developed to predict customer churn.
+Two supervised machine learning models were developed for customer churn prediction.
 
-Models Used
+### Models Used
 
-Logistic Regression
+- Logistic Regression
+- Random Forest Classifier
 
-Random Forest Classifier
+Dataset Split
 
-Data Split
+- Training Data: **80%**
+- Testing Data: **20%**
 
-Training Data: 80%
+---
 
-Testing Data: 20%
+## 📊 Model Evaluation Metrics
 
-Evaluation Metrics
+The models were evaluated using:
 
-Accuracy
+- Accuracy
+- Precision
+- Recall
+- F1 Score
+- ROC-AUC Score
 
-Precision
+Special emphasis was placed on **F1 Score** and **ROC-AUC** because these metrics provide a balanced evaluation for identifying churned customers while minimizing false predictions.
 
-Recall
+---
 
-F1 Score
+## 🏆 Result
 
-ROC-AUC Score
+Among the two models,
 
-📊 Model Performance
+### ✅ Random Forest achieved the best overall performance.
 
-Among the two models, Random Forest achieved the best overall performance.
+It provided:
 
-It demonstrated:
+- Higher Accuracy
+- Better Precision
+- Higher Recall
+- Improved F1 Score
+- Better ROC-AUC Score
 
-Higher predictive accuracy
+The model successfully identified customers who are most likely to churn, enabling businesses to take proactive retention actions.
 
-Better F1 Score
+---
 
-Stronger ROC-AUC performance
+# 📈 Business Recommendations
 
-Improved capability to correctly identify churned customers while minimizing false predictions
+## 1️⃣ Implement Targeted Customer Retention Campaigns
 
-📈 Business Recommendations
+Customers predicted to be at risk of churn should receive:
 
-🎯 1. Target At-Risk Customers
+- Personalized Emails
+- Discount Coupons
+- Reminder Notifications
+- Re-engagement Campaigns
 
-Send personalized offers
+---
 
-Email reminders
+## 2️⃣ Strengthen Loyalty Programs
 
-Discount campaigns
+Reward high-value customers with:
 
-Win-back promotions
+- Exclusive Deals
+- Loyalty Rewards
+- Early Product Access
+- VIP Membership Benefits
 
-🌟 2. Strengthen Loyalty Programs
+---
 
-Reward high-value customers through:
+## 3️⃣ Optimize Marketing & Product Strategy
 
-Exclusive discounts
+Use purchasing behavior insights to:
 
-Early product access
+- Recommend Products
+- Bundle Frequently Purchased Items
+- Improve Cross-selling
+- Increase Average Order Value
 
-Reward points
+---
 
-VIP membership benefits
+# 📌 Business Impact
 
-🛒 3. Improve Product & Marketing Strategy
+This project demonstrates how combining customer analytics with predictive machine learning enables organizations to:
 
-Use purchasing behavior to:
+- Improve customer retention
+- Increase customer lifetime value
+- Reduce churn
+- Enhance marketing effectiveness
+- Support data-driven business decisions
+- Increase long-term revenue
 
-Recommend relevant products
+---
 
-Bundle frequently purchased items
+# 🛠️ Tech Stack
 
-Personalize product suggestions
+**Programming Language**
 
-Increase Average Order Value (AOV)
+- R
 
-🛠️ Tech Stack
+**Libraries**
 
-Python
+- dplyr
+- tidyr
+- ggplot2
+- caret
+- randomForest
+- e1071
+- corrplot
 
-Pandas
+**Machine Learning**
 
-NumPy
+- Logistic Regression
+- Random Forest
 
-Matplotlib
+**IDE**
 
-Seaborn
+- RStudio
 
-Scikit-learn
+---
 
-Jupyter Notebook
+# 📂 Project Workflow
 
-✅ Result
+```
+Business Problem
+        │
+        ▼
+Data Collection
+        │
+        ▼
+Data Cleaning
+        │
+        ▼
+Feature Engineering
+        │
+        ▼
+Exploratory Data Analysis
+        │
+        ▼
+RFM Analysis
+        │
+        ▼
+Machine Learning
+(Logistic Regression & Random Forest)
+        │
+        ▼
+Model Evaluation
+        │
+        ▼
+Business Insights
+        │
+        ▼
+Business Recommendations
+```
 
-The project successfully combined customer behavior analytics, RFM segmentation, and machine learning to predict customer churn and generate actionable business insights.
+---
 
-Business Impact
+# 📊 Key Skills Demonstrated
 
-Improved customer retention strategy
+- Business Analytics
+- Customer Analytics
+- Exploratory Data Analysis
+- Customer Segmentation
+- RFM Analysis
+- Machine Learning
+- Predictive Analytics
+- Customer Churn Prediction
+- Data Visualization
+- Business Intelligence
+- Statistical Analysis
+- Customer Retention Strategy
 
-Identified high-value customer segments
+---
 
-Enabled personalized marketing
+# 📁 Repository Structure
 
-Supported data-driven decision making
+```
+Customer-Churn-Prediction/
+│
+├── data/
+│     └── Online Retail Dataset
+│
+├── notebooks/
+│     └── Customer_Churn_Prediction.ipynb
+│
+├── outputs/
+│     ├── EDA Charts
+│     ├── RFM Analysis
+│     ├── Model Evaluation
+│     └── Business Insights
+│
+├── README.md
+│
+└── requirements.txt
+```
 
-Increased opportunities for revenue growth through proactive customer engagement
+---
+
+# 🚀 Future Improvements
+
+- Deploy the model using Streamlit or Shiny.
+- Create an interactive Power BI Dashboard.
+- Build real-time customer churn prediction.
+- Integrate automated customer recommendation systems.
+- Improve model performance using XGBoost and LightGBM.
+
+---
+
+# 👨‍💻 Author
+
+**Harendra**
+
+MBA (Business Analytics)
+
+📊 Data Analytics | Business Analytics | Machine Learning | Business Intelligence
+
+---
+
+## ⭐ Support
+
+If you found this project helpful, please consider giving this repository a **⭐ Star**.
+
+It helps others discover the project and motivates future improvements.
